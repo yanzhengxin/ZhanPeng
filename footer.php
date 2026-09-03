@@ -44,7 +44,7 @@
 
       <div class="footer__col">
         <h4 class="footer__col-title">联系方式</h4>
-        <div class="footer__contact-item"><strong>电话：</strong> <?php echo get_theme_mod('zhanpeng_phone', '+86 18452069980'); ?></div>
+        <div class="footer__contact-item"><strong>电话：</strong> <?php echo get_theme_mod('zhanpeng_phone', '+86 18156228081'); ?></div>
         <div class="footer__contact-item"><strong>邮箱：</strong> <?php echo get_theme_mod('zhanpeng_email', 'sales@zhanpeng-dz.com'); ?></div>
         <div class="footer__contact-item"><strong>地址：</strong> <?php echo get_theme_mod('zhanpeng_address', '铜陵市郊区经济开发区光电智造产业园'); ?></div>
       </div>
