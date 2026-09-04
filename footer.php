@@ -10,7 +10,7 @@
     <div class="footer__grid">
       <div class="footer__col">
         <h4 class="footer__col-title">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-white.png" alt="<?php bloginfo('name'); ?>" style="height: 36px; margin-bottom: var(--space-md);">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-white.webp" alt="<?php bloginfo('name'); ?>" style="height: 36px; margin-bottom: var(--space-md);">
         </h4>
         <p class="footer__about">
           <?php bloginfo('description'); ?>

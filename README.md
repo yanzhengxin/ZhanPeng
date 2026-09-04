@@ -23,6 +23,25 @@ python -m http.server 3000
 # 浏览器打开 http://127.0.0.1:3000/
 ```
 
+## 性能
+
+首屏关键优化（详见 `tools/optimize.py`，可重复执行、幂等）：
+
+- 图片全部转 **WebP**，引用体积由 **2120 KB → 213 KB（-90%）**
+- 所有非首屏 `<img>` 带 `loading="lazy"` + `decoding="async"` + 显式 `width/height`（防 CLS）
+- 首屏 hero 图 `fetchpriority="high"` 并在 `<head>` 里 `<link rel="preload">`
+- 补齐 `favicon.ico` / `favicon-32.png` / `apple-touch-icon.png`
+
+**新增/替换图片后请重跑一次**：
+
+```bash
+python tools/optimize.py
+```
+
+> 注意：`main.js` 里保留了一段基于 `data-src` 的 IntersectionObserver 懒加载逻辑，
+> 但本站 HTML 从不使用 `data-src`（改用原生 `loading="lazy"`），该段代码当前不生效，
+> 后续若改用 JS 懒加载再启用。
+
 ## 目录结构
 
 ```
@@ -32,9 +51,12 @@ python -m http.server 3000
 ├── applications.html       # 应用方案
 ├── about.html              # 关于我们
 ├── contact.html            # 联系我们
+├── privacy.html            # 隐私政策
+├── favicon.ico             # 站点图标
+├── tools/optimize.py       # 图片压缩 / 懒加载注入（可重复执行）
 └── assets/
     ├── css/                # 样式
     ├── js/                 # 脚本
-    ├── images/             # 图片（logo、产品图）
+    ├── images/             # 图片（logo、产品图，均为 WebP）
     └── downloads/          # 数据手册 + 上位机软件
 ```

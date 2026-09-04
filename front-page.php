@@ -22,7 +22,7 @@ get_header();
       </div>
     </div>
     <div class="hero__visual">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-product.png" alt="展鹏电子产品展示">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-product.webp" alt="展鹏电子产品展示">
     </div>
   </div>
   <div class="hero__scroll">

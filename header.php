@@ -18,7 +18,7 @@
       <?php if (has_custom_logo()): ?>
         <?php the_custom_logo(); ?>
       <?php else: ?>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo('name'); ?>" width="160" height="42">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="<?php bloginfo('name'); ?>" width="160" height="42">
       <?php endif; ?>
     </a>
 
