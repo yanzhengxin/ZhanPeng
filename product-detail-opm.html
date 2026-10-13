@@ -81,7 +81,7 @@
             <div style="display: flex; flex-direction: column; gap: 0.5rem; flex: 1;">
               <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center;">
                 <span style="font-size: 0.75rem; color: var(--text-secondary); min-width: 80px;">📄 规格书：</span>
-                <a href="assets/downloads/D-PMS08A-datasheet.pdf" class="btn btn--primary btn--sm" download>
+                <a href="assets/downloads/D-PMS04A-datasheet.pdf" class="btn btn--primary btn--sm" download>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                   Data Sheet (PDF)
                 </a>
@@ -174,7 +174,7 @@
           <tr><td>通讯指令</td><td colspan="2">SCPI 指令</td></tr>
           <tr><td>远程控制</td><td colspan="2">以太网 + 串口</td></tr>
           <tr><td>电源</td><td colspan="2">100 ~ 240V AC, 50/60Hz</td></tr>
-          <tr><td>外形尺寸</td><td colspan="2">300mm × 350mm × 45mm（台式）</td></tr>
+          <tr><td>外形尺寸</td><td colspan="2">300mm × 355mm × 65mm（台式）</td></tr>
           <tr><td>重量</td><td colspan="2">1.2 kg</td></tr>
           <tr><td>工作温度</td><td colspan="2">0℃ ~ 40℃</td></tr>
           <tr><td>存储温度</td><td colspan="2">-30℃ ~ 60℃</td></tr>
@@ -182,8 +182,22 @@
         </tbody>
       </table>
     </div>
+    <h3 style="margin: 2.5rem 0 1rem;">动态范围选型</h3>
+    <div style="overflow-x: auto;">
+      <table class="specs-table">
+        <thead><tr><th>参数</th><th>D-PMS（Standard）</th><th>D-PMH（High）</th><th>D-PML（Low）</th></tr></thead>
+        <tbody>
+          <tr><td>测量范围</td><td>-50 ~ +15 dBm</td><td>-40 ~ +25 dBm</td><td>-60 ~ +7 dBm</td></tr>
+          <tr><td>最大输入光功率</td><td>20 dBm</td><td>30 dBm</td><td>15 dBm</td></tr>
+          <tr><td>通道数量</td><td>4 / 8</td><td>4 / 8</td><td>4 / 8</td></tr>
+          <tr><td>工作波长</td><td colspan="3">800 ~ 1700 nm（最小 1 nm 调整间隔）</td></tr>
+          <tr><td>不准确度</td><td colspan="3">5%</td></tr>
+          <tr><td>回损</td><td colspan="3">&gt; 50 dB（典型规格）</td></tr>
+        </tbody>
+      </table>
+    </div>
     <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1.5rem; line-height: 1.8;">
-      订购选型：动态范围 S=Standard（-50~+15 dBm）、H=High（-40~+25 dBm）、L=LOW（-60~+7 dBm）；通道数 04 / 08；封装形式 D=台式、M=模块。
+      订购选型：动态范围 S=Standard（-50~+15 dBm）、H=High（-40~+25 dBm）、L=LOW（-60~+7 dBm）；通道数 04 / 08；参数相关 A~Z；封装形式 D=台式、M=模块。
     </p>
   </div>
 </section>
